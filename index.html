@@ -3,78 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RZHN Websites</title>
+    <title>RZHN Websites - Modern</title>
     <style>
+        /* Basisstijl */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             line-height: 1.6;
+            background-color: #000;
+            color: #fff;
         }
+
         header {
-            background-color: #222;
-            color: white;
-            padding: 20px 10px;
+            background-color: #111;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
         }
+
+        header h1 {
+            color: #FFD700;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #FFD700;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
+            transition: transform 0.3s;
         }
+
+        nav a:hover {
+            transform: scale(1.2);
+        }
+
         section {
-            padding: 40px 20px;
-            max-width: 1000px;
+            padding: 60px 20px;
+            max-width: 1200px;
             margin: auto;
         }
+
         h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            color: #FFD700;
         }
+
         .services {
             display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
+
         .service {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: #111;
+            padding: 30px;
+            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.5);
+        }
+
         .service h3 {
             margin-top: 0;
+            color: #FFD700;
         }
+
         .service p.price {
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            color: #fff;
         }
+
+        .service p {
+            margin: 10px 0;
+        }
+
         .contact-form {
-            max-width: 600px;
+            max-width: 700px;
             margin: auto;
         }
+
         .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 10px;
+            padding: 15px;
             margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            border-radius: 10px;
+            border: 1px solid #FFD700;
+            background-color: #111;
+            color: #fff;
         }
+
+        .contact-form input::placeholder, .contact-form textarea::placeholder {
+            color: #FFD700;
+        }
+
         .contact-form button {
-            padding: 10px 20px;
-            background-color: #222;
-            color: white;
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: #000;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
+            font-weight: bold;
             cursor: pointer;
+            transition: transform 0.3s;
         }
+
+        .contact-form button:hover {
+            transform: scale(1.05);
+        }
+
         footer {
-            background-color: #222;
-            color: white;
+            background-color: #111;
             text-align: center;
-            padding: 20px 10px;
-            margin-top: 40px;
+            padding: 30px 10px;
+            color: #FFD700;
+            box-shadow: 0 -5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -84,13 +143,13 @@
         <h1>RZHN WEBSITES</h1>
         <nav>
             <a href="#services">Services</a>
-            <a href="#about">About</a>
+            <a href="#about">Over</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="services">
-        <h2>Websites voor ondernemers</h2>
+        <h2>Onze Services</h2>
         <div class="services">
             <div class="service">
                 <h3>Basic Website</h3>
@@ -98,33 +157,34 @@
                 <p>1 pagina</p>
                 <p>Design & layout</p>
                 <p>Bedrijfsinfo + contactformulier</p>
-                <p>Werkt op telefoon & PC</p>
+                <p>Responsive (PC & Mobiel)</p>
             </div>
             <div class="service">
                 <h3>Standard Website</h3>
-                <p class="price">€14,999.00</p>
+                <p class="price">€149.99</p>
                 <p>3 pagina’s (Home, Over, Contact)</p>
                 <p>Mobiel geoptimaliseerd</p>
+                <p>Professionele teksten</p>
             </div>
             <div class="service">
                 <h3>Premium Website</h3>
                 <p class="price">€249.99</p>
                 <p>Tot 5 pagina’s</p>
                 <p>Booking systeem, menu of portfolio</p>
-                <p>Professionele teksten</p>
                 <p>Branding kleuren + layout</p>
+                <p>Professionele teksten + Extra functionaliteiten</p>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <h2>Over dit bedrijf</h2>
-        <p>Mijn doel met RZHN Websites is om ondernemers snel, professioneel en betaalbaar online zichtbaar te maken. Ik gebruik moderne tools om binnen één dag een strakke, functionele website te bouwen die past bij de stijl en behoeften van de klant. Met RZHN Websites wil ik ondernemers helpen groeien, zonder dat zij dure marketingbureaus nodig hebben.</p>
+        <h2>Over Ons</h2>
+        <p>Mijn doel met RZHN Websites is om ondernemers snel, professioneel en betaalbaar online zichtbaar te maken. Ik gebruik moderne tools om een strakke, functionele website te bouwen die past bij de stijl en behoeften van de klant. Met RZHN Websites wil ik ondernemers helpen groeien, zonder dat zij dure marketingbureaus nodig hebben.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Ons</h2>
-        <p>Ben jij klaar om jouw bedrijf professioneel online zichtbaar te maken? Neem dan gerust contact met ons op. Wij denken met je mee, bouwen jouw website snel en zorgen dat alles perfect werkt. Stuur ons een bericht — wij reageren zo snel mogelijk!</p>
+        <p>Ben jij klaar om jouw bedrijf professioneel online zichtbaar te maken? Neem dan gerust contact met ons op. Wij bouwen jouw website snel en zorgen dat alles perfect werkt. Stuur ons een bericht — wij reageren zo snel mogelijk!</p>
         <form class="contact-form">
             <input type="text" name="firstName" placeholder="First Name" required>
             <input type="text" name="lastName" placeholder="Last Name">
