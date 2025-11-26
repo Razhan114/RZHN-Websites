@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZHN Websites - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+    <div class="logo">RZHN<span>Websites</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Over Ons</a>
+        <a href="services.html">Diensten</a>
+        <a href="order.html">Bestellen</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Professionele Websites<br><span>Voor Ondernemers</span></h1>
+    <p>Modern, snel en betaalbaar binnen één dag opgeleverd.</p>
+    <a href="order.html" class="btn-gold">Bestel Nu</a>
+</section>
+</body>
+</html>

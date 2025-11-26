@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bestellen - RZHN Websites</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<div class="logo">RZHN<span>Websites</span></div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">Over Ons</a>
+<a href="services.html">Diensten</a>
+<a href="order.html">Bestellen</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="page-section">
+<h1>Kies een pakket</h1>
+<div class="services">
+    <div class="service-card">
+        <h3>Basic Website</h3>
+        <p class="price">€74.99</p>
+        <a href="order-details.html?package=Basic" class="btn-gold">Kies dit pakket</a>
+    </div>
+    <div class="service-card">
+        <h3>Standard Website</h3>
+        <p class="price">€149.99</p>
+        <a href="order-details.html?package=Standard" class="btn-gold">Kies dit pakket</a>
+    </div>
+    <div class="service-card">
+        <h3>Premium Website</h3>
+        <p class="price">€249.99</p>
+        <a href="order-details.html?package=Premium" class="btn-gold">Kies dit pakket</a>
+    </div>
+</div>
+</section>
+</body>
+</html>
